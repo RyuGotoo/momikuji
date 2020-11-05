@@ -4,5 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def momikuji(request):
-    response = HttpResponse('hello, world!')
-    return response
+    return render(request, 'momikujiapp/momikuji.html')
